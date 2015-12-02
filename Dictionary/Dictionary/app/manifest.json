@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "Dictionary",
+    "description": "Dictionary",
+    "version": "1.0",
+
+    "permissions": [ "contextMenus", "https://www.google.com.au/*" ],
+
+
+    "content_scripts": [
+        {
+            "matches": [ "https://www.google.com.au/*whatdoumean" ],
+            "css": [ "googleContentPage.css" ]
+        }
+    ],
+ "background": {
+    "scripts": ["background.js" ,"jquery-2.1.4.js"]
+  }
+}
